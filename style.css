@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --primary-color: #572364; 
+  --secondary-color: #ffffff;
+  --text-color: #000000;
+}
+
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos del encabezado */
+.header {
+  background-color: #f9f9f9;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.menu-barra {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Estilos de la sección de texto del encabezado */
+.textos-header {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.textos-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.textos-header p {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.buttons a {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* Estilos de la sección del hero-card */
+.hero-card {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero-card img {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Estilos de la sección de texto */
+#texto {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.hero-texto p {
+  font-size: 18px;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Estilos de la sección de info-cards */
+#info-cards {
+  background-color: #f1f1f1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#info-cards img {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+#info-cards h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.info-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  max-width: 400px;
+  text-align: left;
+}
+
+.info-card img {
+  width: 100%;
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.info-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.info-card p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Estilos de la sección de product-cards */
+#product-cards {
+  text-align: center;
+  padding: 50px 0;
+}
+
+#product-cards h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.product-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  max-width: 300px;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.product-card img {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Estilos de la sección de contacto */
+#contact {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contacto-datos h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contacto-datos .datos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacto-datos .datos li {
+  margin-bottom: 10px;
+}
+
+.mapa-contact iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  border: 0;
+  margin-bottom: 20px;
+}
+
+.redes img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+/* Estilos del pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+
