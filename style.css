@@ -312,18 +312,6 @@ footer p {
       font-size: 30px;
   }
 
-  .subtitulo{
-      font-size: 30px;
-  }
-
-  .img-galeria{
-      width: 95%;
-  }
-  
-  .agregar-imagen{
-      width: 90%;
-  }
-
   .social-media{
       width: 100%;
       justify-content: space-evenly;
