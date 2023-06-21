@@ -2,123 +2,124 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diseño Web</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css">
+    <title>Beauty Glow</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header class="header">
-        <img class="logo" src="assets/logo.png" alt="logo">
-        <nav class="navbar">
-            <label for="toggle-menu" class="menu-barra">
-                <img src="assets/barra.png" alt="menu-icono">
-            </label>
-            <input type="checkbox" id="toggle-menu">
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#beneficios">Beneficios</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+    <header class="header" id="header">
+        <div class="logoNav">
+            <a href="index.html"><img src="/assets/logo.png" alt="logo-maquillaje"></a>
+        </div>
+
+        <nav class="nav">
+            <ul>
+                <li><a class="sub" href="index.html">Inicio</a></li>
+                <li><a class="sub" href="#beneficios">Beneficios</a></li>
+                <li><a class="sub" href="#servicios">Productos</a></li>
+                <li><a class="sub" href="#contacto">Contacto</a></li>
+                <li><a class="sub" href="iniciarsesion.html">Iniciar Sesión</a></li>
+                <li><a class="sub" href="registrarse.html">Registrarse</a></li>
+            </ul>
+        </nav>
+
+        <nav id="hamburguesa">
+            <input type="checkbox" id="menu">
+            <label for="menu">☰</label>
+            <ul>
+                <li><a class="sub" href="index.html">Inicio</a></li>
+                <li><a class="sub" href="#beneficios">Beneficios</a></li>
+                <li><a class="sub" href="#productos">Productos</a></li>
+                <li><a class="sub" href="#contacto">Contacto</a></li>
+                <li><a class="sub" href="iniciarsesion.html">Iniciar Sesión</a></li>
+                <li><a class="sub" href="registrarse.html">Registrarse</a></li>
             </ul>
         </nav>
     </header>
-    <section class="textos-header">
-        <h1>BEAUTY GLOW</h1>
-        <p>Tu mejor maquillaje se encuentra aquí</p>
-        <div class="buttons">
-            <a href="login.html">Iniciar sesión</a>
-            <a href="register.html">Crear cuenta</a>
-        </div>
-    </section>
-    <section class="hero-card">
-        <img src="assets/portada.jpg" alt="imagen card">
-        <div class="hero-card-info"></div>
-    </section>
-    <section id="texto">
-        <div class="hero-texto">
-            <p>
-                Disfruta de productos de alta calidad, una amplia variedad de opciones y asesoramiento experto. <span>¡Realza tu belleza y encuentra el maquillaje perfecto para ti!</span>
-            </p>
-        </div>
-    </section>
-    <section id="info-cards">
-        <img src="assets/pinceles-maquillaje-salpicaduras-polvo-rosa.jpg" alt="imagen maquillaje">
-        <h2><b>BENEFICIOS DE USAR NUESTROS PRODUCTOS</b></h2>
-        <p>Al elegirnos, disfrutarás de lo siguiente</p>
-        <div class="info-cards-container">
-            <div class="info-card">
-                <img src="assets/mejora.png" alt="imagen"/>
-                <h3>Mejora tu apariencia</h3>
-                <p>Nuestros productos de maquillaje están diseñados para resaltar tus mejores rasgos y realzar tu belleza natural, brindándote una apariencia radiante y confianza en ti misma</p>
+      <div class="portada">
+        <img class="imagenPortada" src="/assets/portada.png" alt="maquillaje-portada">
+     </div>
+
+    <main>
+        <section id="info-cards">
+            <h2><b>BENEFICIOS DE USAR NUESTROS PRODUCTOS</b></h2>
+            <div class="info-cards-container">
+                <div class="info-card">
+                    <img src="assets/mejora.png" alt="imagen"/>
+                    <h3>Mejora tu apariencia</h3>
+                    <p>Nuestros productos de maquillaje están diseñados para resaltar tus mejores rasgos y realzar tu belleza natural.</p>
+                </div>
+                <div class="info-card">
+                    <img src="assets/cuidadopiel.png" alt="estrategia" />
+                    <h3>Cuidado de la piel</h3>
+                    <p>Además de embellecerte también contienen ingredientes que cuidan y protegen tu piel.</p>
+                </div>
+                <div class="info-card">
+                    <img src="assets/resistencia.png" alt="alcance" />
+                    <h3>Durabilidad y resistencia</h3>
+                    <p>Nuestros productos de maquillaje te mantendrán con un aspecto impecable durante todo el día.</p>
+                </div>
             </div>
-            <div class="info-card">
-                <img src="assets/cuidadopiel.png" alt="estrategia" />
-                <h3>Cuidado de la piel</h3>
-                <p>Además de embellecerte, nuestros productos de maquillaje también contienen ingredientes que cuidan y protegen tu piel. Disfruta de fórmulas de alta calidad que hidratan, nutren y protegen tu piel mientras te maquillas</p>
+        </section>
+        <section id="product-cards">
+            <h2> &#128151PRODUCTOS MÁS VENDIDOS&#128151</h2>
+            <div class="product-cards-container">
+                <div class="product-card">
+                    <img src="assets/maquillaje.jfif" alt="Maquillaje 1">
+                    <h3>Mascara de pestañas</h3>
+                    <p>Precio: $1.600</p>
+                </div>
+                <div class="product-card">
+                    <img src="assets/maquillaje 2.png" alt="Maquillaje 2">
+                    <h3>Labial</h3>
+                    <p>Precio: $1.350</p>
+                </div>
+                <div class="product-card">
+                    <img src="assets/maquillaje 3.jfif" alt="Maquillaje 3">
+                    <h3>Rubor en polvo</h3>
+                    <p>Precio: $1.400</p>
+                </div>
+                <div class="product-card">
+                    <img src="assets/maquillaje 4.jfif" alt="Maquillaje 4">
+                    <h3>Base facial liquida</h3>
+                    <p>Precio: $2.000</p>
+                </div>
             </div>
-            <div class="info-card">
-                <img src="assets/resistencia.png" alt="alcance" />
-                <h3>Durabilidad y resistencia</h3>
-                <p>Nuestros productos de maquillaje están especialmente formulados para ser duraderos y resistentes, lo que significa que te mantendrán con un aspecto impecable durante todo el día. No importa si tienes una larga jornada laboral o una noche de fiesta</p>
+        </section>
+        <section id="contact">
+            <div class="contacto-datos">
+                <h2>CONTACTO</h2>
+                <ul class="datos">
+                    <li>&#x1F4CD; Santander 7925</li>
+                    <li>&#x1F4E7; beautyglow@gmail.com</li>
+                    <li>&#x1F4F1; 1137658489</li>
+                </ul>
             </div>
-        </div>
-    </section>
-    <section id="product-cards">
-        <h2>PRODUCTOS MÁS VENDIDOS</h2>
-        <div class="product-cards-container">
-            <div class="product-card">
-                <img src="assets/maquillaje.jfif" alt="Maquillaje 1">
-                <h3>Mascara de pestañas</h3>
-                <p>Precio: $1.600</p>
+            <div class="mapa-contact">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.4486802193296!2d-58.82038022433427!3d-34.51685877298562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc998e164e5945%3A0xcf5fcdc4e126da03!2sSantander%207925%2C%20B1740LBO%20Cuartel%20V%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1684382022030!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="product-card">
-                <img src="assets/maquillaje 2.png" alt="Maquillaje 2">
-                <h3>Labial</h3>
-                <p>Precio: $1.350</p>
+            <div class="redes">
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="assets/twitter.png" alt="icon twitter">
+                </a>
+                <a href="https://instagram.com/" target="_blank">
+                    <img src="assets/instagram.png" alt="icon instagram">
+                </a>
+                <a href="https://facebook.com/" target="_blank">
+                    <img src="assets/facebook.png" alt="icon facebook">
+                </a>
             </div>
-            <div class="product-card">
-                <img src="assets/maquillaje 3.jfif" alt="Maquillaje 3">
-                <h3>Rubor en polvo</h3>
-                <p>Precio: $1.400</p>
-            </div>
-            <div class="product-card">
-                <img src="assets/maquillaje 4.jfif" alt="Maquillaje 4">
-                <h3>Base facial liquida</h3>
-                <p>Precio: $2.000</p>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="contacto-datos">
-            <h2>Contacto</h2>
-            <ul class="datos">
-                <li>&#x1F4CD; Santander 2345</li>
-                <li>&#x1F4E7; beautyglow@gmail.com</li>
-                <li>&#x1F4F1; 1137658489</li>
-            </ul>
-        </div>
-        <div class="mapa-contact">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.4486802193296!2d-58.82038022433427!3d-34.51685877298562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc998e164e5945%3A0xcf5fcdc4e126da03!2sSantander%207925%2C%20B1740LBO%20Cuartel%20V%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1684382022030!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="redes">
-            <a href="https://twitter.com/" target="_blank">
-                <img src="assets/twitter.png" alt="icon twitter">
-            </a>
-            <a href="https://instagram.com/" target="_blank">
-                <img src="assets/instagram.png" alt="icon instagram">
-            </a>
-            <a href="https://facebook.com/" target="_blank">
-                <img src="assets/facebook.png" alt="icon facebook">
-            </a>
-        </div>
-    </section>
-</main>
-<footer>
-    <img src="assets/laptop-code-solid.svg" height="70px" alt="" />
-    <p>&copy; 2023 Beauty Glow. Todos los derechos reservados.</p>
-</footer>
+        </section>
+    </main>
+    <footer>
+        <img src="assets/laptop-code-solid.svg" height="70px" alt="" />
+        <p>&copy; 2023 BEAUTY GLOW. TODOS LOS DERECHOS RESERVADOS.</p>
+    </footer>
+    </body>
+    </html>
+    
+    
+
 </body>
 </html>
-

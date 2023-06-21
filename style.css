@@ -1,88 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
-  --primary-color: #572364; 
+  --primary-color: #0000; 
   --secondary-color: #ffffff;
-  --text-color: #000000;
+  --text-color: #ff0080;
 }
 
-/* Estilos generales */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-/* Estilos del encabezado */
+a:visited{
+    color: inherit;
+}
+
+body{
+    background-color: #000000;
+}
+
+/*HEADER*/
 .header {
-  background-color: #f9f9f9;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
 }
 
-.logo {
-  height: 50px;
+.logoNav img{
+    height: 60px;
+    width: 100%;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
+
+.nav ul{
+    display: flex;
+    gap: 20px;
+    
 }
 
-.menu-barra {
-  cursor: pointer;
-  margin-right: 10px;
+.nav ul li{
+    list-style-type: none;
 }
 
-.nav-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
+.nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase; 
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.90px;
+    color: #ff0080;
 }
 
-.nav-links li {
-  margin-right: 10px;
+.nav ul li a:hover{
+    color: #ffffff;
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: #333;
+
+/*IMAGEN PORTADA*/
+.imagenPortada{
+    width: 100%;
 }
 
-/* Estilos de la sección de texto del encabezado */
-.textos-header {
-  background-color: #f1f1f1;
-  text-align: center;
-  padding: 50px 0;
+.portada h1 {
+        width: 90%;
+        max-width: 1200px;
+        overflow: hidden;
+        margin: auto;
+        padding: 60px 0;
+      
+      
 }
+
+
 
 .textos-header h1 {
   font-size: 36px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .textos-header p {
   font-size: 18px;
-  color: #777;
+  color: white;
   margin-bottom: 30px;
+  
 }
 
-.buttons a {
-  display: inline-block;
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  margin-right: 10px;
-}
 
 /* Estilos de la sección del hero-card */
 .hero-card {
   text-align: center;
   margin-bottom: 30px;
+  background-color: #ffffff;
 }
 
 .hero-card img {
@@ -99,7 +110,7 @@ body {
 
 .hero-texto p {
   font-size: 18px;
-  color: #333;
+  color: white;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -146,14 +157,17 @@ body {
 }
 
 .info-card p {
-  font-size: 14px;
-  color: #777;
+  font-size: 20px;
+  color: black;
 }
+
+
 
 /* Estilos de la sección de product-cards */
 #product-cards {
   text-align: center;
   padding: 50px 0;
+  background-color: #ffffff;
 }
 
 #product-cards h2 {
@@ -189,18 +203,18 @@ body {
 
 .product-card p {
   font-size: 14px;
-  color: #777;
+  color: black;
 }
 
 /* Estilos de la sección de contacto */
 #contact {
-  background-color: #f9f9f9;
+  background-color: white;
   padding: 50px 0;
   text-align: center;
 }
 
 .contacto-datos h2 {
-  font-size: 24px;
+  font-size: 25px;
   margin-bottom: 20px;
 }
 
@@ -208,6 +222,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  font-size: 18px;
 }
 
 .contacto-datos .datos li {
@@ -229,15 +244,285 @@ body {
 
 /* Estilos del pie de página */
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: black;
+  color: #ff0080;
   text-align: center;
   padding: 20px;
 }
 
 footer p {
   margin: 0;
+  font-size: 15px;
+}
+
+
+@media screen and (max-width: 800px){
+  .menu-navegacion{
+      width: 50vw;
+  }
+
+  .titulo{
+      font-size: 40px;
+  }
+
+  .contenedor-servicio img{
+      width: 80%;
+      margin-bottom: 40px;
+  }
+  
+  
+
+  
+  .cont-expert{
+      width: 80%;
+  }
+  
+  .footer-content{
+      justify-content: center;
+  }
+
+  .social-media{
+      width: 80%;
+      justify-content: space-evenly;
+  }
+
+  .social-media-icon{
+      margin-left: 0;
+  }
+
+  .contact-us{
+      text-align: center;
+      width: 80%;
+      margin-bottom: 40px;
+  }
+  
+}
+
+
+@media screen and (max-width: 500px){
+  .menu-navegacion{
+      width: 65vw;
+  }
+
+  .hamburguer{
+      top: 20px;
+      right: 20px;
+  }
+
+  .titulo{
+      font-size: 30px;
+  }
+
+  .subtitulo{
+      font-size: 30px;
+  }
+
+  .img-galeria{
+      width: 95%;
+  }
+  
+  .agregar-imagen{
+      width: 90%;
+  }
+
+  .social-media{
+      width: 100%;
+      justify-content: space-evenly;
+  }
+
+  .social-media-icon{
+      margin-left: 0;
+  }
+
+  .contact-us{
+      text-align: center;
+      width: 95%;
+      margin-bottom: 40px;
+  }
+  
+}
+/*MENÚ DE HAMBURGUESA*/
+@media screen and (min-width:200px) and (max-width:770px){
+    .logoNav, .nav{
+        display: none;
+    }
+
+    #header{
+        position: absolute;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-left: 5px;
+        border-bottom: transparent;
+    }
+
+    #hamburguesa ul{
+        position: absolute;
+    }
+
+    ul{
+        display: none;
+    }
+      
+    input:checked  ~ ul{
+        display:block;
+    }
+      
+    input{
+        display: none;
+    }
+      
+    label{
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+    }
+      
+    label:hover{
+    background-color: #edede9;
+    }
+
+    input:checked ~ label {
+    background-color: #edede9; 
+    }
+
+    #hamburguesa ul li a{
+        text-decoration: none;
+        font-family: 'Spectral', serif;
+        font-weight: bold;
+        color: #333;
+    }
+      
+    ul{
+        margin-top:0;
+        padding: 0;
+        width: 200px;
+      
+    }
+        
+    li{
+        display: block;
+        background-color: #edede9;
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+        border-bottom: 1px solid grey;
+    }
+      
+    li:hover{
+        filter: brightness(110%);
+        color: #52b2cf;
+    }
+}
+
+/*SACO EL MENÚ DE HAMBURGUESA*/
+@media screen and (min-width:771px){
+    #hamburguesa{
+        display: none;
+    }
 }
 
 
 
+/* PAGINAS DE INICIAR SESIÓN Y REGISTRO */
+
+
+body {
+       font-family: Arial, Helvetica, sans-serif;
+       margin: 0;
+       background: url(/assets/pincel-maquillaje-salpicaduras-polvo-sobre-fondo-negro.jpg);
+       background-size: cover;
+       background-attachment: fixed;
+
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .contenedor{
+        width: 100%;
+        padding: 15px;
+    }
+
+    .formulario{
+        background: white;
+        margin-top: 150px;
+        padding: 3px;
+
+    }
+
+
+    h1{
+      text-align: center;
+      color: #1a2537;
+      font-size: 40px;
+
+    }
+
+    input[type="text"],
+    input[type="password"] {
+            font-size: 20px;
+            width: 82%;
+            padding: 10px;
+            border: none;
+        }
+        
+
+    .input-contenedor{
+             margin-bottom: 15px;
+             border: 1px solid #aaa;
+    }
+
+    .icon{
+         min-width: 50px;
+         text-align: center;
+         color: #999;
+    }
+
+    .button{
+         border: none;
+         width: 100%;
+         color: white;
+         font-size: 20px;
+         background: #1a2537;
+         padding: 15px 20px;
+         border-radius: 5px;
+         cursor: pointer;
+    }
+
+    .button:hover{
+         background: cadetblue;
+    }
+
+    p{
+      text-align: center;
+    }
+
+    .link{
+        text-decoration: none;
+        color: #1a2537;
+        font-weight: 600;
+    }
+
+    .link:hover{
+         color: cadetblue;
+    }
+
+    @media(min-width:768px)
+    {
+        .formulario{
+             margin: auto;
+             width: 500px;
+             margin-top: 150px;
+             border-radius: 2%;
+    }
+
+}
