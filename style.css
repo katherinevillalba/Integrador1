@@ -436,7 +436,7 @@ footer p {
 body {
        font-family: Arial, Helvetica, sans-serif;
        margin: 0;
-       background: url(/assets/pincel-maquillaje-salpicaduras-polvo-sobre-fondo-negro.jpg);
+       background: url(/assets/fondo.jpg);
        background-size: cover;
        background-attachment: fixed;
 
